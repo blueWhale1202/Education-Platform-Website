@@ -41,6 +41,22 @@ a {
     opacity: 0.9;
 }
 
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 126.316%;
+    letter-spacing: -0.02em;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
 /* ==================== Header ==================== */
 .header {
     padding: 36px 0 12px;
@@ -132,6 +148,7 @@ a {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .hero .media-summary {
@@ -147,7 +164,7 @@ a {
 
 .hero .summary-item {
     display: flex;
-    align-self: center;
+    align-items: center;
 }
 
 .hero .summary-item + .summary-item {
@@ -263,4 +280,127 @@ a {
 
 .content-block .stats strong:last-child {
     margin-left: 28px;
+}
+
+/* ==================== Popular ==================== */
+.popular {
+    padding: 200px 0;
+    background: #fff;
+}
+
+.popular-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-head .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.popular-head .control {
+    display: flex;
+    gap: 16px;
+}
+
+.popular-head .control .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.popular-head .control .icon:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.popular-course {
+    display: flex;
+    margin-top: 55px;
+    overflow: auto;
+}
+
+.popular-course .course-item {
+    flex-shrink: 0;
+    width: calc((100% - 60px) / 3);
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+    background: #fff;
+}
+
+.course-item + .course-item {
+    margin-left: 30px;
+}
+
+.popular-course .course-item:hover {
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border-color: #fff;
+}
+
+.course-item .thumb img {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.course-item .thumb:hover {
+    opacity: 0.9;
+}
+
+.course-item .body {
+    padding: 16px 22px 22px;
+}
+
+.course-item .item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-item .title a {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%; /* 166.667% */
+}
+.course-item .item-head .starts {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fea31b;
+}
+
+.course-item .desc {
+    margin-top: 6px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 185.714%; /* 185.714% */
+}
+
+.course-item .item-booking {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-item .item-booking .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.course-item .item-booking .btn-booking {
+    min-width: 118px;
+    line-height: 50px;
+    font-size: 1.4rem;
 }
