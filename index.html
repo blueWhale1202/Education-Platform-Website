@@ -5,13 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Education Platform Website</title>
 
+        <!-- Embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Reset CSS -->
-        <link rel="stylesheet" href="./asset//css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
 
         <!-- Styles CSS -->
-        <link rel="stylesheet" href="./asset/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body>
-        <h1>Education Platform Website</h1>
+    <body style="height: 2000px">
+        <!-- Header -->
+        <header class="header fixed">
+            <div class="content">
+                <div class="body">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img
+                            src="./assets/img/image/logo.png"
+                            alt="Lesson."
+                            class="logo"
+                        />
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="nav">
+                        <ul>
+                            <li class="active">
+                                <a href="#home" data-text="Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#course" data-text="Courses">
+                                    Courses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pricing" data-text="Pricing">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#reviews" data-text="Reviews">
+                                    Reviews
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Sign up -->
+                    <a href="#!" class="btn signup-btn">Sign Up</a>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
