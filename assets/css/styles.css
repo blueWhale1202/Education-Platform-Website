@@ -371,6 +371,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 166.667%; /* 166.667% */
+    padding-right: 24px;
 }
 .course-item .item-head .starts {
     display: flex;
@@ -403,4 +404,83 @@ a {
     min-width: 118px;
     line-height: 50px;
     font-size: 1.4rem;
+}
+
+/* ==================== Feedback ==================== */
+.feedback {
+    background: #2e2100;
+    padding: 96px 0;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-info .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 141.667%; /* 141.667% */
+}
+
+.feedback-info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 185.714%; /* 185.714% */
+}
+
+.feedback-info .dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 28px;
+}
+
+.feedback-info .dot {
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.feedback-info .dot.active {
+    cursor: default;
+    background: var(--primary-color);
+}
+
+.feedback-content {
+    width: 63%;
+}
+
+.feedback-content blockquote {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 153.846%; /* 153.846% */
+    padding-left: 30px;
 }
